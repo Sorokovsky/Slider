@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 40px;
+}
+.slider{
+    border: 1px dashed red;
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+}
+.slider__slide{
+    margin: 10px 0;
+    border: 1px dashed black;
+}
