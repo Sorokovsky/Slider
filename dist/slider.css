@@ -5,6 +5,7 @@
 }
 .slider-container{
     display: flex;
+    flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0 auto;
@@ -14,9 +15,6 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-}
-.slider__slider{
-    max-width: fit-content !important;
 }
 .slider__button{
     position: absolute;

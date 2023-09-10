@@ -20,4 +20,5 @@ body{
 .slider__slide{
     margin: 10px 0;
     border: 1px dashed black;
+    width: 500px;
 }

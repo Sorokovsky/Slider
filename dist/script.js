@@ -25,7 +25,12 @@ class Slider {
     }
     setContainerGeometry() {
         const container = this.slidesContainer;
-        this.slidesContainer.style.width = getComputedStyle(this.slides[this.currentSlide], null).width;
+        let width = 0;
+        for (let i = 0; i < this.slides.length; i++) {
+            let slide = this.slides[i];
+            width += slide.offsetWidth;
+        }
+        this.slidesContainer.style.width = width + "px";
         this.wrapper.style.height = this.slidesContainer.offsetHeight + "px";
     }
     init() {
